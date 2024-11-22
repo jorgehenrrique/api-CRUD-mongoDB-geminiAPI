@@ -1,0 +1,36 @@
+{
+  "name": "api-posts-gemini",
+  "version": "1.0.0",
+  "description": "API REST em Node.js para CRUD de posts com geração automática de descrições de imagens usando Google Gemini AI",
+  "main": "src/server.js",
+  "type": "module",
+  "license": "AGPL-version-3.0",
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": {
+    "name": "Jorge Henrique"
+  },
+  "contributors": [],
+  "scripts": {
+    "dev": "node --watch --env-file=.env src/server.js",
+    "test": ""
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0",
+    "multer": "^1.4.5-lts.1"
+  }
+}

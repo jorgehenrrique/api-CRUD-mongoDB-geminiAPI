@@ -1,0 +1,23 @@
+
+
+GET http://localhost:3000/posts
+###
+
+GET http://localhost:3000/posts/673dff51ae48016f45de9845
+###
+
+GET http://localhost:3000/posts/12
+###
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "description": "Este é um novo post",
+  "imgUrl": "https://placecats.com/millie/300/150",
+  "alt": "Descricao da nova imagem"
+}
+###
+
+DELETE http://localhost:3000/posts/6740a76d27ddcf2b507c4598
+###
